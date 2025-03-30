@@ -8,72 +8,45 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="wrapper">
-    <section class="left-column">
-      <article class="project">
-        <img src="https://i.imgur.com/Ht1rEtz.jpeg" alt="Ceramics">
-        <div class="project-meta">
-          <span class="project-index">00</span> <span class="project-title">CERAMICS</span>
-        </div>
-        <p class="desc">Handcrafted ceramics reflecting the harmony of functionality and aesthetics. Based in Athens.</p>
-        <p class="studio">ROUWARE STUDIO</p>
-        <p class="location">Athens / Greece 2023</p>
-        <a href="#" class="link">Read more</a>
-      </article>
-
-      <article class="project">
-        <img src="https://i.imgur.com/w50KpeT.jpeg" alt="PUZZLE">
-        <div class="project-meta">
-          <span class="project-index">01</span> <span class="project-title">PUZZLE</span>
-        </div>
-        <p class="desc">PUZZLE represents a captivating public intervention and art installation featuring an oversized concrete puzzle, its fragments thoughtfully scattered across the streets of Gorizia and Nova Gorica. This immersive experience beckons the public to embark on a journey of discovery, encouraging them to seek, collect, and piece together the puzzle.</p>
-        <p class="studio">CARINARNICA</p>
-        <p class="location">Nova Gorica / Slovenia 2018</p>
-        <a href="#" class="link">Read more</a>
-      </article>
-
-      <article class="project">
-        <img src="https://i.imgur.com/Gj0nrMQ.jpeg" alt="Dreamcatcher">
-        <div class="project-meta">
-          <span class="project-index">02</span> <span class="project-title">DREAMCATCHER</span>
-        </div>
-        <p class="desc">DREAMCATCHER is an immersive art installation, a captivating piece that serves as a visual metaphor for the juxtaposition of two virtual spaces, embodying a duality of existence—an exploration of contrasts, distinctions, and the myriad 'worlds' we inhabit. It encapsulates the realm we seek to depart from and the one we aspire to attain.</p>
-        <p class="studio">PIXXLEPOINT Festival / Slovenia</p>
-        <p class="location">Tir Gallery, Mostovna 2016</p>
-        <a href="#" class="link">Read more</a>
-      </article>
-
-      <article class="project">
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/-k-cbKMPF6I" frameborder="0" allowfullscreen></iframe>
-        <div class="project-meta">
-          <span class="project-index">04</span> <span class="project-title">BORDER</span>
-        </div>
-        <p class="desc">BORDER is a poignant video installation that portrays the intersection of two distinct frontiers in my life: the Palestine - Jordan border, which I traverse when entering and leaving Palestine, and the Italy - Slovenia border, a part of my daily journey to school. This installation serves as a reimagined perspective on my experiences navigating these borders, symbolizing my ongoing exploration of border-crossing.</p>
-        <p class="studio">Academy of Applied Arts</p>
-        <p class="location">Rijeka / Croatia, 2016</p>
-        <a href="https://www.youtube.com/watch?v=-k-cbKMPF6I" class="link" target="_blank">LINK TO VIDEO</a>
-      </article>
-
-      <article class="project">
-        <iframe src="https://player.vimeo.com/video/219432592" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
-        <div class="project-meta">
-          <span class="project-index">05</span> <span class="project-title">DONI</span>
-        </div>
-        <p class="desc">DONI is a captivating stop-motion animated music video created for the song of the same name by a local Slovenian band hailing from Nova Gorica. This artistic endeavor was a collaborative effort, realized with a talented group of students from the University of Nova Gorica in Slovenia. The video has received recognition and acclaim, being featured in numerous animation and film festivals across Slovenia, including the Animateka 2016 festival.</p>
-        <p class="studio">Animateka 2016</p>
-        <p class="location">Ljubljana / Slovenia 2016</p>
-        <a href="https://vimeo.com/219432592" class="link" target="_blank">LINK TO VIDEO</a>
-      </article>
-    </section>
-
-    <aside class="right-column">
-      <h1>RAWAN HOURANI</h1>
-      <p>Rawan Hourani has a Bachelor's degree in Interior Design from Petra University in Amman – Jordan and a Master's degree in Media Art and Practices (Contemporary Art) from the University of Nova Gorica – Slovenia.</p>
-      <p>A ceramist reflecting the harmony of functionality and aesthetics. Founder and Art Director of ROUWARE. Based in Athens.</p>
-      <p>Previously, I co-founded and directed The Space Berlin e.V., where I led artistic programming, media production, and cross-institutional collaborations. My work focused on curating inclusive spaces through exhibitions, workshops, and cultural events—bridging art, community, and dialogue.</p>
-      <p>I bring a multidisciplinary perspective rooted in spatial awareness, visual storytelling, and contemporary art.</p>
-      <p><a href="mailto:hello@rawanhourani.com">Email</a><br/><a href="https://instagram.com" target="_blank">Instagram</a></p>
+  <div class="layout">
+    <aside class="bio">
+      <div class="bio-content">
+        <h1>RAWAN HOURANI</h1>
+        <p>Rawan Hourani has a Bachelor's degree in Interior Design from Petra University in Amman – Jordan and a Master's degree in Media Art and Practices (Contemporary Art) from the University of Nova Gorica – Slovenia.</p>
+        <p>A ceramist reflecting the harmony of functionality and aesthetics. Founder and Art Director of ROUWARE. Based in Athens.</p>
+        <p>Previously, I co-founded and directed The Space Berlin e.V., where I led artistic programming, media production, and cross-institutional collaborations. My work focused on curating inclusive spaces through exhibitions, workshops, and cultural events—bridging art, community, and dialogue.</p>
+        <p>I bring a multidisciplinary perspective rooted in spatial awareness, visual storytelling, and contemporary art.</p>
+        <p><a href="mailto:hello@rawanhourani.com">Email</a><br/><a href="https://instagram.com" target="_blank">Instagram</a></p>
+      </div>
     </aside>
+
+    <main class="projects">
+      <section class="project">
+        <div class="col image"><img src="https://i.imgur.com/Ht1rEtz.jpeg" alt="Ceramics"></div>
+        <div class="col description">
+          <div class="project-header">00 <span>CERAMICS</span></div>
+          <p>Handcrafted ceramics reflecting the harmony of functionality and aesthetics. Based in Athens.</p>
+          <a href="#">Read more</a>
+        </div>
+        <div class="col meta">
+          <div class="studio">ROUWARE STUDIO</div>
+          <div class="location">Athens / Greece 2023</div>
+        </div>
+      </section>
+
+      <section class="project">
+        <div class="col image"><img src="https://i.imgur.com/w50KpeT.jpeg" alt="PUZZLE"></div>
+        <div class="col description">
+          <div class="project-header">01 <span>PUZZLE</span></div>
+          <p>PUZZLE represents a captivating public intervention and art installation featuring an oversized concrete puzzle, its fragments thoughtfully scattered across the streets of Gorizia and Nova Gorica. This immersive experience beckons the public to embark on a journey of discovery, encouraging them to seek, collect, and piece together the puzzle.</p>
+          <a href="#">Read more</a>
+        </div>
+        <div class="col meta">
+          <div class="studio">CARINARNICA</div>
+          <div class="location">Nova Gorica / Slovenia 2018</div>
+        </div>
+      </section>
+    </main>
   </div>
 </body>
 </html>
