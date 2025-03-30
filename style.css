@@ -20,6 +20,16 @@ body {
 }
 
 .bio {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25vw;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 40px 30px;
+  background: #fff;
+  border-left: 1px solid #eee;
+}
   width: 25vw;
   height: 100vh;
   overflow-y: auto;
@@ -42,6 +52,12 @@ body {
 }
 
 .projects {
+  width: 75vw;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 40px;
+  margin-right: 25vw;
+}
   width: 75vw;
   height: 100vh;
   overflow-y: auto;
