@@ -1,41 +1,43 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   font-family: 'Space Grotesk', sans-serif;
-  font-weight: 300;
   background: white;
   color: #111;
   font-size: 15px;
   line-height: 1.6;
+  font-weight: 300;
 }
 
-.layout {
+.page {
   display: flex;
   height: 100vh;
+  overflow: hidden;
 }
 
 .bio {
   width: 25vw;
-  position: sticky;
-  top: 0;
   height: 100vh;
   overflow-y: auto;
+  position: sticky;
+  top: 0;
   padding: 40px 30px;
-  border-left: 1px solid #eee;
   background: #fff;
+  border-right: 1px solid #eee;
 }
 
 .bio-content h1 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
 .bio-content p {
-  font-size: 14px;
+  font-size: 13px;
   margin-bottom: 16px;
 }
 
@@ -48,8 +50,9 @@ body {
 
 .project {
   display: flex;
-  gap: 30px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
+  gap: 20px;
+  align-items: flex-start;
 }
 
 .project .col {
@@ -61,8 +64,8 @@ body {
   width: 33%;
 }
 
-.image img {
-  max-width: 100%;
+.image img, .image iframe {
+  width: 100%;
   height: auto;
 }
 
@@ -71,19 +74,20 @@ body {
 }
 
 .meta {
-  width: 25%;
-  font-size: 13px;
+  width: 20%;
+  font-size: 12px;
   font-style: italic;
   text-align: right;
   justify-content: flex-start;
+  padding-top: 2px;
 }
 
 .project-header {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 10px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
 }
 
 .project-header span {
@@ -91,8 +95,8 @@ body {
 }
 
 .description a {
-  font-size: 13px;
-  margin-top: 10px;
+  font-size: 12px;
+  margin-top: 8px;
   text-decoration: underline;
   color: #000;
 }
